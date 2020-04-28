@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body, html {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #ff5e57;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.conteiner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 24px;
+  background-image: url("https://i.postimg.cc/dVNhdbx8/monochrome-photo-of-yawning-lion-3651330.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 70px;
+  word-spacing: 0.2em;
+  text-shadow: 2px 4px 10px white;
+}
+
+.main-subtitle {
+  margin: 12px 0 60px 0;
+  font-weight: normal;
+  color: whitesmoke;
+  text-shadow: 2px 4px 10px white;
+}
+
+.btn {
+  padding: 18px 24px 18px 24px;
+  font-size: 14px;
+  background-color: #ff5e57;
+  color: #ffffff;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  background-color: #f00a00;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

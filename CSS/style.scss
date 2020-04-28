@@ -1,0 +1,74 @@
+//3 oierwsze linie to stałe zmienne wykorzystywane w całympliku SCSS
+//do obsługi potrzebny jest Live SASS Compiler i Live serwer
+$color-main:  #ff5e57;
+$color-backgound:#f0f3f3;
+$color-text:#444444;
+*{
+    box-sizing: border-box;
+}
+*:focus{
+    box-shadow:none;
+}
+body, html{
+    color:$color-text;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    height: 100%;
+}
+a, a:hover{
+    text-decoration: none;
+    color: $color-main;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    padding: 60px 0;
+}
+.conteiner{
+    max-width: 980px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+.splash{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    background-image: url('https://i.postimg.cc/dVNhdbx8/monochrome-photo-of-yawning-lion-3651330.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;    
+}
+.page-intro{
+    margin: auto;
+    text-align: center;
+}
+.main-title{
+    margin: 0;//marginesy
+    font-weight: bold;//wielkosc czcionki bold, normal
+    color: white;//kolor czcionki
+    font-size: 70px;//rozmiar czcionki
+    word-spacing: 0.2em;//odstepy w teksie
+    text-shadow: 2px 4px 10px white;//cien za testem
+}
+.main-subtitle{
+    margin: 12px 0 60px 0;
+    font-weight: normal;
+    color: whitesmoke;
+    text-shadow: 2px 4px 10px white;
+}
+.btn{//przycisk na stronie
+    padding: 18px 24px 18px 24px;
+    font-size: 14px;
+    background-color: $color-main;//kolor tła z wykorzystaniem zmienny-stałych
+    color: #ffffff;//kolortesktu
+    border-radius: 40px;//zaikraglenie rogów przycisku
+}
+.btn:hover{//wyglad przycisku po najechani na niego myszką
+    background-color: darken($color-main , 20%);
+    color: #ffffff;
+}
