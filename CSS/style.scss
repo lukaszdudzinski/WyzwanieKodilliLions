@@ -3,6 +3,11 @@
 $color-main:  #ff5e57;
 $color-backgound:#f0f3f3;
 $color-text:#444444;
+$color-spalsh:#f7f1e3;
+//Fonty jako stała
+$font-header: 'Permanent Marker', Cursive;
+$font-text:'Overpass', Sans-Serif;
+
 *{
     box-sizing: border-box;
 }
@@ -15,6 +20,9 @@ body, html{
     line-height: 1.7;
     margin: 0;
     height: 100%;
+    font-family: $font-text;//wykorzystanie stałych 
+    //Font-Family: 'Overpass', Sans-Serif;//Font Family i size ze strony reliabepsd.com
+    Font-Size: 17px;//Font Family i size ze strony reliabepsd.com
 }
 a, a:hover{
     text-decoration: none;
@@ -49,15 +57,23 @@ section{
 }
 .main-title{
     margin: 0;//marginesy
-    font-weight: bold;//wielkosc czcionki bold, normal
+    font-weight: normal;//wielkosc czcionki bold, normal
     color: white;//kolor czcionki
-    font-size: 70px;//rozmiar czcionki
+    font-family: $font-header;//wykorzystanie font famuly ze stałych
+    // Font-Family: 'Permanent Marker', Cursive;//Font Family i size ze strony reliabepsd.com
+    font-size: 100px;//rozmiar czcionki
     word-spacing: 0.2em;//odstepy w teksie
     text-shadow: 2px 4px 10px white;//cien za testem
+    background: rgba(0,0,0,0.5);//cieniowanie pod napisem
+    border-radius: 40px;//zaikraglenie cieniowania podnapisem
+
 }
 .main-subtitle{
     margin: 12px 0 60px 0;
-    font-weight: normal;
+    font-weight: bold;
+    font-family: $font-text;
+    //Font-Family: 'Overpass', Sans-Serif;//Font Family i size ze strony reliabepsd.com
+    Font-Size: 17px;//Font Family i size ze strony reliabepsd.com
     color: whitesmoke;
     text-shadow: 2px 4px 10px white;
 }
@@ -71,4 +87,34 @@ section{
 .btn:hover{//wyglad przycisku po najechani na niego myszką
     background-color: darken($color-main , 20%);
     color: #ffffff;
+}
+.section-title{
+    position: relative;
+    margin: 0 0 60px 0;
+    text-align: center;
+    text-shadow: 2px 4px 10px white;//cien za testem
+    background: rgba(0,0,0,0.5);//cieniowanie pod napisem
+}
+.section-title:after{
+    position: absolute;
+    display: block;
+    content:'';
+    width: 50px;
+    height: 5px;
+    background: $color-main;
+    left: 50%;
+    bottom: -16px;
+    margin-left: -30px;
+}
+.about{
+    background-color: $color-backgound;
+}
+.section-intro{
+    margin: 36px 0 0 0;
+}
+.features{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: center;
+    margin: 24px 0 0 0;
 }
