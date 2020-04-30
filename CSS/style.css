@@ -85,6 +85,8 @@ section {
   padding: 18px 24px 18px 24px;
   font-size: 14px;
   background-color: #ff5e57;
+  -webkit-box-shadow: 0 5px #bd0800;
+          box-shadow: 0 5px #bd0800;
   color: #ffffff;
   border-radius: 40px;
 }
@@ -100,6 +102,7 @@ section {
   text-align: center;
   text-shadow: 2px 4px 10px white;
   background: rgba(0, 0, 0, 0.5);
+  padding: 0;
 }
 
 .section-title:after {
@@ -120,14 +123,57 @@ section {
 
 .section-intro {
   margin: 36px 0 0 0;
+  text-align: center;
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .features {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-  max-width: 33.333333%;
   text-align: center;
   margin: 24px 0 0 0;
+}
+
+.features i {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color: #ffffff;
+  font-size: 32px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/prWDPPCr/brown-lion-2270848.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100hv;
+}
+
+.statement p {
+  margin: 0;
+  font-style: italic;
+  font-size: xx-large;
+  font-family: "Permanent Marker", Cursive;
+  padding: 150px 0px 150px 0px;
+  color: #f0f3f3;
+  text-shadow: 2px 4px 10px black;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

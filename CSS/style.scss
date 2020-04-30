@@ -81,6 +81,7 @@ section{
     padding: 18px 24px 18px 24px;
     font-size: 14px;
     background-color: $color-main;//kolor tła z wykorzystaniem zmienny-stałych
+    box-shadow: 0 5px darken($color-main, 30%);
     color: #ffffff;//kolortesktu
     border-radius: 40px;//zaikraglenie rogów przycisku
 }
@@ -94,6 +95,7 @@ section{
     text-align: center;
     text-shadow: 2px 4px 10px white;//cien za testem
     background: rgba(0,0,0,0.5);//cieniowanie pod napisem
+    padding: 0;
 }
 .section-title:after{
     position: absolute;
@@ -111,10 +113,52 @@ section{
 }
 .section-intro{
     margin: 36px 0 0 0;
+    text-align: center;
+    
+}
+.features-wrapper{
+    display: flex;
 }
 .features{
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    // flex: 0 0 33.333333%;
+    // max-width: 33.333333%;
     text-align: center;
     margin: 24px 0 0 0;
+    
+    
+}
+.features i{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: #ffffff;
+    font-size: 32px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.5);//cieniowanie pod napisem
+}
+.feature-title{
+    margin: 24px 0 0 0;
+    text-transform: uppercase;
+}
+.feature-description{
+    margin: 24px 0 0 0 ;
+    padding: 0 24px;
+}
+.statement{
+    background-image:url('https://i.postimg.cc/prWDPPCr/brown-lion-2270848.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;// Efekt parallax - nieruchome tło sekcji :D WYPAS 
+    height: 100hv;
+}
+.statement p{
+    margin: 0;
+    font-style: italic;
+    font-size: xx-large;
+    font-family: $font-header;
+    padding: 150px 0px 150px 0px;
+    color: $color-backgound;
+    text-shadow: 2px 4px 10px black;
+    text-align: center;
 }
