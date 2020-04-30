@@ -176,4 +176,21 @@ section {
   text-shadow: 2px 4px 10px black;
   text-align: center;
 }
+
+.quotes {
+  text-align: center;
+}
+
+.quotes-wrapper {
+  margin: 72px 0 0 0;
+  text-shadow: 2px 4px 10px black;
+}
+
+.quote blockquote {
+  padding: 0 36px;
+}
+
+.quote footer {
+  margin: 24px 0 0 0;
+}
 /*# sourceMappingURL=style.css.map */
