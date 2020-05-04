@@ -251,4 +251,44 @@ section {
 .gallery-item:hover::before, .gallery-item:hover figcaption {
   display: block;
 }
+
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border-radius: 50px solid #ff5e57;
+  width: 280px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 80px;
+  margin-right: 80px;
+}
+
+.social-links li a {
+  color: #444444;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links li :hover {
+  color: #0b0ba1;
+  text-shadow: 2px 4px 10px black;
+}
+
+.social-links li a:hover {
+  font-display: #f00a00;
+}
+
+.social-links-text {
+  font-size: medium;
+  font-family: "Permanent Marker", Cursive;
+}
 /*# sourceMappingURL=style.css.map */
